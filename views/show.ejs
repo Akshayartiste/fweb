@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page with Textboxes and Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Information</h1>
+
+    <div class="container">
+        <label for="textbox1">Name: <%= newUserr.name %></label>
+        <!-- <input type="text" id="textbox1" placeholder="Enter text here..."> -->
+
+        <label for="textbox2">Email: <%= newUserr.email %></label>
+        <!-- <input type="text" id="textbox2" placeholder="Enter more text here..."> -->
+    </div>
+
+    <div class="container">
+        <img src="<%= newUserr.img[0].url %>" alt="Description of Image">
+    </div>
+
+</body>
+</html>
